@@ -1,0 +1,25 @@
+spring:
+  application:
+    name: inventory-service
+  data:
+    mongodb:
+      uri: mongodb://admin:admin_password@localhost:27017/movie_booking?authSource=admin
+  kafka:
+    bootstrap-servers: localhost:9092
+    consumer:
+      group-id: inventory-service
+      value-deserializer: org.apache.kafka.common.serialization.StringDeserializer
+    producer:
+      value-serializer: org.apache.kafka.common.serialization.StringSerializer
+
+server:
+  port: 8087
+
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8761/eureka/
+
+logging:
+  level:
+    com.moviebooking: DEBUG
