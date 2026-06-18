@@ -1,0 +1,39 @@
+spring:
+  application:
+    name: payment-service
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: false
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.MySQL8Dialect
+  datasource:
+    url: jdbc:mysql://localhost:3306/movie_booking
+    username: booking_user
+    password: booking_password
+    driver-class-name: com.mysql.cj.jdbc.Driver
+  kafka:
+    bootstrap-servers: localhost:9092
+    producer:
+      value-serializer: org.apache.kafka.common.serialization.StringSerializer
+
+server:
+  port: 8085
+
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8761/eureka/
+
+payment:
+  gateway:
+    razorpay:
+      api-key: ${RAZORPAY_API_KEY}
+      api-secret: ${RAZORPAY_API_SECRET}
+    stripe:
+      api-key: ${STRIPE_API_KEY}
+
+logging:
+  level:
+    com.moviebooking: DEBUG
