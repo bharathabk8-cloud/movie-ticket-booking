@@ -61,7 +61,7 @@
         <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
 
         <!-- Spring -->
-        <spring-cloud.version>2023.0.3</spring-cloud.version>
+        <spring-cloud.version>2021.0.8</spring-cloud.version>
 
         <!-- Dependency Versions -->
         <mysql.version>9.0.0</mysql.version>
@@ -118,6 +118,7 @@
                 <groupId>io.jsonwebtoken</groupId>
                 <artifactId>jjwt-impl</artifactId>
                 <version>${jjwt.version}</version>
+                <scope>runtime</scope>
             </dependency>
 
             <dependency>
@@ -273,7 +274,7 @@
 
                                     <requireJavaVersion>
 
-                                        <version>[17,)</version>
+                                        <version>[11,)</version>
 
                                     </requireJavaVersion>
 
