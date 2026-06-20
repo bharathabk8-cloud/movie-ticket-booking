@@ -14,6 +14,7 @@ import org.springframework.kafka.core.KafkaTemplate;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 import redis.clients.jedis.Jedis;
+import redis.clients.jedis.params.SetParams;
 
 import java.time.LocalDateTime;
 import java.util.List;
@@ -147,7 +148,7 @@ public class BookingService {
 
     private boolean acquireDistributedLock(String key, String value, int expirationSeconds) {
         try {
-            String result = jedis.set(key, value, "NX", "EX", expirationSeconds);
+            String result = jedis.set(key, value, SetParams.setParams().nx().ex(expirationSeconds));
             return "OK".equals(result);
         } catch (Exception e) {
             log.error("Error acquiring distributed lock: {}", e.getMessage());
