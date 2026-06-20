@@ -30,12 +30,8 @@ public class SeatInventory {
     private Integer bookedSeats;
     private Integer availableSeats;
     private Map<String, String> seatStatus; // Seat number -> status (AVAILABLE, BOOKED, BLOCKED)
-    private LocalDateTime createdAt;
-    private LocalDateTime updatedAt;
-
-    @PrePersist
-    public void prePersist() {
-        this.createdAt = LocalDateTime.now();
-        this.updatedAt = LocalDateTime.now();
+   
+    private createdAt = LocalDateTime.now();
+    private updatedAt = LocalDateTime.now();
     }
 }
