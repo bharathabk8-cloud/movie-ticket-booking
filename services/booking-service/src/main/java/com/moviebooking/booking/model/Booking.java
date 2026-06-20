@@ -41,12 +41,8 @@ public class Booking {
     private LocalDateTime cancellationTime;
     private String cancellationReason;
     private String appliedOffers;
-    private LocalDateTime createdAt;
-    private LocalDateTime updatedAt;
-
-    @PrePersist
-    public void prePersist() {
-        this.createdAt = LocalDateTime.now();
-        this.updatedAt = LocalDateTime.now();
-    }
+    
+    private createdAt = LocalDateTime.now();
+    private updatedAt = LocalDateTime.now();
+    
 }
