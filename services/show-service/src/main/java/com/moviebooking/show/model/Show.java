@@ -37,13 +37,10 @@ public class Show {
     private Double ticketPrice;
     private String language;
     private String format; // 2D, 3D, IMAX
-    private Boolean isActive;
-    private LocalDateTime createdAt;
-    private LocalDateTime updatedAt;
 
    
     private Boolean isActive = true;
-private LocalDateTime createdAt = LocalDateTime.now();
-private LocalDateTime updatedAt = LocalDateTime.now();
+    private LocalDateTime createdAt = LocalDateTime.now();
+    private LocalDateTime updatedAt = LocalDateTime.now();
     
 }
