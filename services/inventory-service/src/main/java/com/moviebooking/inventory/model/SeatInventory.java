@@ -31,7 +31,7 @@ public class SeatInventory {
     private Integer availableSeats;
     private Map<String, String> seatStatus; // Seat number -> status (AVAILABLE, BOOKED, BLOCKED)
    
-    private createdAt = LocalDateTime.now();
-    private updatedAt = LocalDateTime.now();
+    private LocalDateTime createdAt = LocalDateTime.now();
+    private LocalDateTime updatedAt = LocalDateTime.now();
     }
 }
