@@ -41,10 +41,9 @@ public class Show {
     private LocalDateTime createdAt;
     private LocalDateTime updatedAt;
 
-    @PrePersist
-    public void prePersist() {
-        this.createdAt = LocalDateTime.now();
-        this.updatedAt = LocalDateTime.now();
-        this.isActive = true;
-    }
+   
+    this.createdAt = LocalDateTime.now();
+    this.updatedAt = LocalDateTime.now();
+    this.isActive = true;
+    
 }
