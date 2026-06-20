@@ -39,6 +39,7 @@
         <mongodb.version>4.8.1</mongodb.version>
         <elasticsearch.version>8.0.0</elasticsearch.version>
         <testcontainers.version>1.17.6</testcontainers.version>
+        <jjwt.version>0.11.5</jjwt.version>
     </properties>
     <dependencyManagement>
         <dependencies>
