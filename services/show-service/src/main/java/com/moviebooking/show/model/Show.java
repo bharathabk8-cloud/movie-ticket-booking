@@ -42,8 +42,8 @@ public class Show {
     private LocalDateTime updatedAt;
 
    
-    this.createdAt = LocalDateTime.now();
-    this.updatedAt = LocalDateTime.now();
-    this.isActive = true;
+    private Boolean isActive = true;
+private LocalDateTime createdAt = LocalDateTime.now();
+private LocalDateTime updatedAt = LocalDateTime.now();
     
 }
