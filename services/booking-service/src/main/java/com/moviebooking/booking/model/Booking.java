@@ -42,7 +42,7 @@ public class Booking {
     private String cancellationReason;
     private String appliedOffers;
     
-    private createdAt = LocalDateTime.now();
-    private updatedAt = LocalDateTime.now();
+    private LocalDateTime  createdAt = LocalDateTime.now();
+    private LocalDateTime  updatedAt = LocalDateTime.now();
     
 }
