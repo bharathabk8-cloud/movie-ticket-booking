@@ -7,6 +7,7 @@ import lombok.NoArgsConstructor;
 import org.springframework.data.annotation.Id;
 import org.springframework.data.mongodb.core.mapping.Document;
 
+import java.math.BigDecimal;
 import java.time.LocalDate;
 import java.time.LocalDateTime;
 import java.time.LocalTime;
@@ -34,7 +35,7 @@ public class Show {
     private Integer totalSeats;
     private Integer availableSeats;
     private Integer bookedSeats;
-    private Double ticketPrice;
+    private BigDecimal ticketPrice;
     private String language;
     private String format; // 2D, 3D, IMAX
 

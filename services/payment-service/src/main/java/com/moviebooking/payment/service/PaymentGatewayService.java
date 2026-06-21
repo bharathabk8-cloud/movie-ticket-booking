@@ -35,9 +35,10 @@ public class PaymentGatewayService {
      * Process refund through payment gateway
      */
     public void refundPayment(Payment payment) {
-        log.info("Processing refund through gateway: {}", payment.getPaymentGateway());
+
         
         try {
+            log.info("Processing refund through gateway: {}", payment.getPaymentGateway());
             // TODO: Integrate with actual payment gateway for refunds
             Thread.sleep(1000);
             log.info("Refund processed successfully in gateway");

@@ -7,6 +7,7 @@ import lombok.Data;
 import lombok.NoArgsConstructor;
 
 import java.io.Serializable;
+import java.time.LocalDate;
 
 /**
  * DTO for Movie
@@ -25,7 +26,7 @@ public class MovieDTO implements Serializable {
     private Integer durationMinutes;
     private String director;
     private String cast;
-    private String releaseDate;
+    private LocalDate releaseDate;
     private String rating;
     private Double imdbRating;
 }

@@ -60,7 +60,7 @@ public class InventoryService {
 
         for (String seatNumber : seatNumbers) {
             String status = inventory.getSeatStatus().get(seatNumber);
-            if (status == null || !"AVAILABLE".equals(status)) {
+            if (!"AVAILABLE".equals(status)) {
                 throw new BusinessException("SEAT_NOT_AVAILABLE", "Seat " + seatNumber + " is not available");
             }
             inventory.getSeatStatus().put(seatNumber, "BOOKED");

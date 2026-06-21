@@ -61,8 +61,10 @@ public class EmailService {
             mailSender.send(message);
             log.info("HTML Email sent successfully to: {}", notification.getRecipientEmail());
             
-        } catch (MessagingException e) {
-            log.error("Error sending HTML email to {}: {}", notification.getRecipientEmail(), e.getMessage());
+        } catch (Exception e) {
+            log.error("Error sending HTML email to {}: {}",
+                    notification.getRecipientEmail(),
+                    e.getMessage());
         }
     }
 }

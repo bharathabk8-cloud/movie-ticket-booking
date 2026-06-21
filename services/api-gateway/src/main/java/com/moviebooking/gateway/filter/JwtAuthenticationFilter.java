@@ -48,7 +48,7 @@ public class JwtAuthenticationFilter extends AbstractGatewayFilterFactory<JwtAut
                 return handleAuthenticationError(exchange, "Invalid JWT signature");
             } catch (Exception e) {
                 log.error("JWT validation failed: {}", e.getMessage());
-                // Proceed without authentication for public endpoints
+                return handleAuthenticationError(exchange, "Invalid JWT");
             }
             
             return chain.filter(modifiedExchange);

@@ -6,6 +6,7 @@ import lombok.Data;
 import lombok.NoArgsConstructor;
 
 import javax.persistence.*;
+import java.math.BigDecimal;
 import java.time.LocalDate;
 import java.time.LocalDateTime;
 
@@ -43,10 +44,10 @@ public class BookingAnalytics {
     private Integer cancelledBookings;
 
     @Column(nullable = false)
-    private Double totalRevenue;
+    private BigDecimal totalRevenue;
 
     @Column(nullable = false)
-    private Double totalDiscounts;
+    private BigDecimal totalDiscounts;
 
     @Column(nullable = false)
     private Integer totalSeatsBooked;
@@ -55,7 +56,7 @@ public class BookingAnalytics {
     private Integer totalTicketsSold;
 
     @Column(nullable = false)
-    private Double averageBookingValue;
+    private BigDecimal averageBookingValue;
 
     @Column(nullable = false, updatable = false)
     private LocalDateTime createdAt;

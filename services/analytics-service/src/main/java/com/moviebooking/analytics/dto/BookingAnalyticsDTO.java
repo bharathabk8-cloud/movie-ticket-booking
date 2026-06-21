@@ -7,6 +7,7 @@ import lombok.Data;
 import lombok.NoArgsConstructor;
 
 import java.io.Serializable;
+import java.math.BigDecimal;
 import java.time.LocalDate;
 
 /**
@@ -25,9 +26,9 @@ public class BookingAnalyticsDTO implements Serializable {
     private Integer totalBookings;
     private Integer confirmedBookings;
     private Integer cancelledBookings;
-    private Double totalRevenue;
-    private Double totalDiscounts;
+    private BigDecimal totalRevenue;
+    private BigDecimal totalDiscounts;
     private Integer totalSeatsBooked;
     private Integer totalTicketsSold;
-    private Double averageBookingValue;
+    private BigDecimal averageBookingValue;
 }

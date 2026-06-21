@@ -5,8 +5,10 @@ import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
+import org.springframework.cloud.sleuth.BaggageInScope;
 
 import java.io.Serializable;
+import java.math.BigDecimal;
 import java.time.LocalDate;
 import java.time.LocalTime;
 
@@ -30,7 +32,7 @@ public class ShowDTO implements Serializable {
     private Integer totalSeats;
     private Integer availableSeats;
     private Integer bookedSeats;
-    private Double ticketPrice;
+    private BigDecimal ticketPrice;
     private String language;
     private String format;
 }

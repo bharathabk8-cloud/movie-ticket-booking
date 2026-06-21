@@ -33,5 +33,5 @@ public class SeatInventory {
    
     private LocalDateTime createdAt = LocalDateTime.now();
     private LocalDateTime updatedAt = LocalDateTime.now();
-    }
+
 }

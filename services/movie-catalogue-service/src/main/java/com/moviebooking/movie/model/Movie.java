@@ -49,7 +49,7 @@ public class Movie implements Serializable {
     private String cast;
 
     @Column(nullable = false)
-    private String releaseDate;
+    private LocalDate releaseDate;
 
     @Column(nullable = false)
     private String rating; // U, UA, A, S
