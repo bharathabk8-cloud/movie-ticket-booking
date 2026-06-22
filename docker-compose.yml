@@ -1,6 +1,35 @@
 version: '3.8'
 
 services:
+  movie-booking-app:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: movie-booking-app
+    ports:
+      - "8080:8080"
+    depends_on:
+      mysql:
+        condition: service_healthy
+      kafka:
+        condition: service_started
+      redis:
+        condition: service_started
+      mongodb:
+        condition: service_started
+    environment:
+      SPRING_DATASOURCE_URL: jdbc:mysql://mysql:3306/movie_booking
+      SPRING_DATASOURCE_USERNAME: booking_user
+      SPRING_DATASOURCE_PASSWORD: booking_password
+
+      SPRING_DATA_MONGODB_URI: mongodb://admin:admin_password@mongodb:27017/movie_booking?authSource=admin
+
+      SPRING_DATA_REDIS_HOST: redis
+      SPRING_DATA_REDIS_PORT: 6379
+
+      SPRING_KAFKA_BOOTSTRAP_SERVERS: kafka:29092
+    networks:
+      - movie-booking-network
   mysql:
     image: mysql:8.0
     container_name: movie-booking-mysql
