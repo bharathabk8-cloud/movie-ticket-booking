@@ -7,6 +7,7 @@ import lombok.Data;
 import lombok.NoArgsConstructor;
 
 import java.io.Serializable;
+import java.math.BigDecimal;
 
 /**
  * DTO for Theatre
@@ -25,6 +26,6 @@ public class TheatreDTO implements Serializable {
     private String phoneNumber;
     private String email;
     private Integer totalScreens;
-    private Double latitude;
-    private Double longitude;
+    private BigDecimal latitude;
+    private BigDecimal longitude;
 }

@@ -6,6 +6,7 @@ import lombok.Data;
 import lombok.NoArgsConstructor;
 
 import javax.persistence.*;
+import java.math.BigDecimal;
 import java.time.LocalDateTime;
 
 /**
@@ -45,10 +46,10 @@ public class Theatre {
     private Integer totalScreens;
 
     @Column(nullable = false)
-    private Double latitude;
+    private BigDecimal latitude;
 
     @Column(nullable = false)
-    private Double longitude;
+    private BigDecimal longitude;
 
     @Column(nullable = false)
     private Boolean isActive;
