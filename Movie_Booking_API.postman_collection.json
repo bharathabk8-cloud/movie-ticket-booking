@@ -1,0 +1,718 @@
+{
+  "info": {
+    "name": "Movie Booking API",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "variable": [
+    {
+      "key": "baseUrl",
+      "value": "http://localhost:8080"
+    }
+  ],
+  "item": [
+    {
+      "name": "/api/v1/analytics/city/{city}",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "{{baseUrl}}/api/v1/analytics/city/{city}",
+          "host": [
+            "{{baseUrl}}"
+          ],
+          "path": [
+            "/api/v1/analytics/city/{city}"
+          ]
+        }
+      }
+    },
+    {
+      "name": "/api/v1/analytics/theatre/{theatreId}",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "{{baseUrl}}/api/v1/analytics/theatre/{theatreId}",
+          "host": [
+            "{{baseUrl}}"
+          ],
+          "path": [
+            "/api/v1/analytics/theatre/{theatreId}"
+          ]
+        }
+      }
+    },
+    {
+      "name": "/api/v1/analytics/date/{date}",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "{{baseUrl}}/api/v1/analytics/date/{date}",
+          "host": [
+            "{{baseUrl}}"
+          ],
+          "path": [
+            "/api/v1/analytics/date/{date}"
+          ]
+        }
+      }
+    },
+    {
+      "name": "/api/v1/bookings/{id}",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "{{baseUrl}}/api/v1/bookings/{id}",
+          "host": [
+            "{{baseUrl}}"
+          ],
+          "path": [
+            "/api/v1/bookings/{id}"
+          ]
+        }
+      }
+    },
+    {
+      "name": "/api/v1/bookings/user/{userId}",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "{{baseUrl}}/api/v1/bookings/user/{userId}",
+          "host": [
+            "{{baseUrl}}"
+          ],
+          "path": [
+            "/api/v1/bookings/user/{userId}"
+          ]
+        }
+      }
+    },
+    {
+      "name": "/api/v1/bookings",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "url": {
+          "raw": "{{baseUrl}}/api/v1/bookings",
+          "host": [
+            "{{baseUrl}}"
+          ],
+          "path": [
+            "/api/v1/bookings"
+          ]
+        }
+      }
+    },
+    {
+      "name": "/api/v1/bookings/{id}/confirm",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "url": {
+          "raw": "{{baseUrl}}/api/v1/bookings/{id}/confirm",
+          "host": [
+            "{{baseUrl}}"
+          ],
+          "path": [
+            "/api/v1/bookings/{id}/confirm"
+          ]
+        }
+      }
+    },
+    {
+      "name": "/api/v1/bookings/{id}/cancel",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "url": {
+          "raw": "{{baseUrl}}/api/v1/bookings/{id}/cancel",
+          "host": [
+            "{{baseUrl}}"
+          ],
+          "path": [
+            "/api/v1/bookings/{id}/cancel"
+          ]
+        }
+      }
+    },
+    {
+      "name": "/api/v1/inventory/show/{showId}",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "{{baseUrl}}/api/v1/inventory/show/{showId}",
+          "host": [
+            "{{baseUrl}}"
+          ],
+          "path": [
+            "/api/v1/inventory/show/{showId}"
+          ]
+        }
+      }
+    },
+    {
+      "name": "/api/v1/inventory",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "url": {
+          "raw": "{{baseUrl}}/api/v1/inventory",
+          "host": [
+            "{{baseUrl}}"
+          ],
+          "path": [
+            "/api/v1/inventory"
+          ]
+        }
+      }
+    },
+    {
+      "name": "/api/v1/inventory/show/{showId}/book",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "url": {
+          "raw": "{{baseUrl}}/api/v1/inventory/show/{showId}/book",
+          "host": [
+            "{{baseUrl}}"
+          ],
+          "path": [
+            "/api/v1/inventory/show/{showId}/book"
+          ]
+        }
+      }
+    },
+    {
+      "name": "/api/v1/inventory/show/{showId}/release",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "url": {
+          "raw": "{{baseUrl}}/api/v1/inventory/show/{showId}/release",
+          "host": [
+            "{{baseUrl}}"
+          ],
+          "path": [
+            "/api/v1/inventory/show/{showId}/release"
+          ]
+        }
+      }
+    },
+    {
+      "name": "/api/v1/movies/{id}",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "{{baseUrl}}/api/v1/movies/{id}",
+          "host": [
+            "{{baseUrl}}"
+          ],
+          "path": [
+            "/api/v1/movies/{id}"
+          ]
+        }
+      }
+    },
+    {
+      "name": "/api/v1/movies",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "{{baseUrl}}/api/v1/movies",
+          "host": [
+            "{{baseUrl}}"
+          ],
+          "path": [
+            "/api/v1/movies"
+          ]
+        }
+      }
+    },
+    {
+      "name": "/api/v1/movies/genre/{genre}",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "{{baseUrl}}/api/v1/movies/genre/{genre}",
+          "host": [
+            "{{baseUrl}}"
+          ],
+          "path": [
+            "/api/v1/movies/genre/{genre}"
+          ]
+        }
+      }
+    },
+    {
+      "name": "/api/v1/movies/language/{language}",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "{{baseUrl}}/api/v1/movies/language/{language}",
+          "host": [
+            "{{baseUrl}}"
+          ],
+          "path": [
+            "/api/v1/movies/language/{language}"
+          ]
+        }
+      }
+    },
+    {
+      "name": "/api/v1/movies",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "url": {
+          "raw": "{{baseUrl}}/api/v1/movies",
+          "host": [
+            "{{baseUrl}}"
+          ],
+          "path": [
+            "/api/v1/movies"
+          ]
+        }
+      }
+    },
+    {
+      "name": "/api/v1/movies/{id}",
+      "request": {
+        "method": "PUT",
+        "header": [],
+        "url": {
+          "raw": "{{baseUrl}}/api/v1/movies/{id}",
+          "host": [
+            "{{baseUrl}}"
+          ],
+          "path": [
+            "/api/v1/movies/{id}"
+          ]
+        }
+      }
+    },
+    {
+      "name": "/api/v1/movies/{id}",
+      "request": {
+        "method": "DELETE",
+        "header": [],
+        "url": {
+          "raw": "{{baseUrl}}/api/v1/movies/{id}",
+          "host": [
+            "{{baseUrl}}"
+          ],
+          "path": [
+            "/api/v1/movies/{id}"
+          ]
+        }
+      }
+    },
+    {
+      "name": "/api/v1/offers/{offerCode}",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "{{baseUrl}}/api/v1/offers/{offerCode}",
+          "host": [
+            "{{baseUrl}}"
+          ],
+          "path": [
+            "/api/v1/offers/{offerCode}"
+          ]
+        }
+      }
+    },
+    {
+      "name": "/api/v1/offers/city/{city}",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "{{baseUrl}}/api/v1/offers/city/{city}",
+          "host": [
+            "{{baseUrl}}"
+          ],
+          "path": [
+            "/api/v1/offers/city/{city}"
+          ]
+        }
+      }
+    },
+    {
+      "name": "/api/v1/offers/theatre/{theatreId}",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "{{baseUrl}}/api/v1/offers/theatre/{theatreId}",
+          "host": [
+            "{{baseUrl}}"
+          ],
+          "path": [
+            "/api/v1/offers/theatre/{theatreId}"
+          ]
+        }
+      }
+    },
+    {
+      "name": "/api/v1/offers/type/{offerType}",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "{{baseUrl}}/api/v1/offers/type/{offerType}",
+          "host": [
+            "{{baseUrl}}"
+          ],
+          "path": [
+            "/api/v1/offers/type/{offerType}"
+          ]
+        }
+      }
+    },
+    {
+      "name": "/api/v1/offers/calculate-discount",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "{{baseUrl}}/api/v1/offers/calculate-discount",
+          "host": [
+            "{{baseUrl}}"
+          ],
+          "path": [
+            "/api/v1/offers/calculate-discount"
+          ]
+        }
+      }
+    },
+    {
+      "name": "/api/v1/offers",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "url": {
+          "raw": "{{baseUrl}}/api/v1/offers",
+          "host": [
+            "{{baseUrl}}"
+          ],
+          "path": [
+            "/api/v1/offers"
+          ]
+        }
+      }
+    },
+    {
+      "name": "/api/v1/offers/{id}",
+      "request": {
+        "method": "PUT",
+        "header": [],
+        "url": {
+          "raw": "{{baseUrl}}/api/v1/offers/{id}",
+          "host": [
+            "{{baseUrl}}"
+          ],
+          "path": [
+            "/api/v1/offers/{id}"
+          ]
+        }
+      }
+    },
+    {
+      "name": "/api/v1/offers/{id}",
+      "request": {
+        "method": "DELETE",
+        "header": [],
+        "url": {
+          "raw": "{{baseUrl}}/api/v1/offers/{id}",
+          "host": [
+            "{{baseUrl}}"
+          ],
+          "path": [
+            "/api/v1/offers/{id}"
+          ]
+        }
+      }
+    },
+    {
+      "name": "/api/v1/payments/{transactionId}",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "{{baseUrl}}/api/v1/payments/{transactionId}",
+          "host": [
+            "{{baseUrl}}"
+          ],
+          "path": [
+            "/api/v1/payments/{transactionId}"
+          ]
+        }
+      }
+    },
+    {
+      "name": "/api/v1/payments/initiate",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "url": {
+          "raw": "{{baseUrl}}/api/v1/payments/initiate",
+          "host": [
+            "{{baseUrl}}"
+          ],
+          "path": [
+            "/api/v1/payments/initiate"
+          ]
+        }
+      }
+    },
+    {
+      "name": "/api/v1/payments/process/{transactionId}",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "url": {
+          "raw": "{{baseUrl}}/api/v1/payments/process/{transactionId}",
+          "host": [
+            "{{baseUrl}}"
+          ],
+          "path": [
+            "/api/v1/payments/process/{transactionId}"
+          ]
+        }
+      }
+    },
+    {
+      "name": "/api/v1/payments/refund/{transactionId}",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "url": {
+          "raw": "{{baseUrl}}/api/v1/payments/refund/{transactionId}",
+          "host": [
+            "{{baseUrl}}"
+          ],
+          "path": [
+            "/api/v1/payments/refund/{transactionId}"
+          ]
+        }
+      }
+    },
+    {
+      "name": "/api/v1/shows/{id}",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "{{baseUrl}}/api/v1/shows/{id}",
+          "host": [
+            "{{baseUrl}}"
+          ],
+          "path": [
+            "/api/v1/shows/{id}"
+          ]
+        }
+      }
+    },
+    {
+      "name": "/api/v1/shows/movie/{movieId}",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "{{baseUrl}}/api/v1/shows/movie/{movieId}",
+          "host": [
+            "{{baseUrl}}"
+          ],
+          "path": [
+            "/api/v1/shows/movie/{movieId}"
+          ]
+        }
+      }
+    },
+    {
+      "name": "/api/v1/shows/theatre/{theatreId}/date/{showDate}",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "{{baseUrl}}/api/v1/shows/theatre/{theatreId}/date/{showDate}",
+          "host": [
+            "{{baseUrl}}"
+          ],
+          "path": [
+            "/api/v1/shows/theatre/{theatreId}/date/{showDate}"
+          ]
+        }
+      }
+    },
+    {
+      "name": "/api/v1/shows",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "url": {
+          "raw": "{{baseUrl}}/api/v1/shows",
+          "host": [
+            "{{baseUrl}}"
+          ],
+          "path": [
+            "/api/v1/shows"
+          ]
+        }
+      }
+    },
+    {
+      "name": "/api/v1/shows/{id}",
+      "request": {
+        "method": "PUT",
+        "header": [],
+        "url": {
+          "raw": "{{baseUrl}}/api/v1/shows/{id}",
+          "host": [
+            "{{baseUrl}}"
+          ],
+          "path": [
+            "/api/v1/shows/{id}"
+          ]
+        }
+      }
+    },
+    {
+      "name": "/api/v1/shows/{id}",
+      "request": {
+        "method": "DELETE",
+        "header": [],
+        "url": {
+          "raw": "{{baseUrl}}/api/v1/shows/{id}",
+          "host": [
+            "{{baseUrl}}"
+          ],
+          "path": [
+            "/api/v1/shows/{id}"
+          ]
+        }
+      }
+    },
+    {
+      "name": "/api/v1/theatres/{id}",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "{{baseUrl}}/api/v1/theatres/{id}",
+          "host": [
+            "{{baseUrl}}"
+          ],
+          "path": [
+            "/api/v1/theatres/{id}"
+          ]
+        }
+      }
+    },
+    {
+      "name": "/api/v1/theatres/city/{city}",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "{{baseUrl}}/api/v1/theatres/city/{city}",
+          "host": [
+            "{{baseUrl}}"
+          ],
+          "path": [
+            "/api/v1/theatres/city/{city}"
+          ]
+        }
+      }
+    },
+    {
+      "name": "/api/v1/theatres/city/{city}/area/{area}",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "{{baseUrl}}/api/v1/theatres/city/{city}/area/{area}",
+          "host": [
+            "{{baseUrl}}"
+          ],
+          "path": [
+            "/api/v1/theatres/city/{city}/area/{area}"
+          ]
+        }
+      }
+    },
+    {
+      "name": "/api/v1/theatres",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "{{baseUrl}}/api/v1/theatres",
+          "host": [
+            "{{baseUrl}}"
+          ],
+          "path": [
+            "/api/v1/theatres"
+          ]
+        }
+      }
+    },
+    {
+      "name": "/api/v1/theatres",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "url": {
+          "raw": "{{baseUrl}}/api/v1/theatres",
+          "host": [
+            "{{baseUrl}}"
+          ],
+          "path": [
+            "/api/v1/theatres"
+          ]
+        }
+      }
+    },
+    {
+      "name": "/api/v1/theatres/{id}",
+      "request": {
+        "method": "PUT",
+        "header": [],
+        "url": {
+          "raw": "{{baseUrl}}/api/v1/theatres/{id}",
+          "host": [
+            "{{baseUrl}}"
+          ],
+          "path": [
+            "/api/v1/theatres/{id}"
+          ]
+        }
+      }
+    },
+    {
+      "name": "/api/v1/theatres/{id}",
+      "request": {
+        "method": "DELETE",
+        "header": [],
+        "url": {
+          "raw": "{{baseUrl}}/api/v1/theatres/{id}",
+          "host": [
+            "{{baseUrl}}"
+          ],
+          "path": [
+            "/api/v1/theatres/{id}"
+          ]
+        }
+      }
+    }
+  ]
+}
